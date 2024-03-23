@@ -19,7 +19,6 @@ body {
     background-color: whitesmoke;
 }
 
-/* Estilos para el encabezado */
 header {
     display: flex;
     align-items: center;
@@ -36,7 +35,6 @@ header h1 {
     font-size: 60px;
 }
 
-/* Estilos para la barra de navegación */
 nav {
     text-align: center;
     position: fixed;
@@ -57,11 +55,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px; /* Espacio entre elementos de la barra de navegación */
+    margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+    margin-right: 0;
 }
 
 nav ul li a {
@@ -71,7 +69,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilos para el contenido principal */
 main {
     display: flex;
     flex-direction: column;
@@ -132,33 +129,32 @@ main h3 {
     margin-bottom: 5px;
 }
 
-/* Media queries */
 @media only screen and (max-width: 600px) {
     header h1 {
-        font-size: 40px; /* Reducir el tamaño del título */
+        font-size: 40px;
     }
 
     nav ul li a {
-        font-size: 20px; /* Reducir el tamaño de la fuente del enlace */
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     header h1 {
-        font-size: 30px; /* Reducir aún más el tamaño del título */
+        font-size: 30px;
     }
 
     nav ul li a {
-        font-size: 16px; /* Reducir aún más el tamaño de la fuente del enlace */
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     header h1 {
-        font-size: 20px; /* Reducir aún más el tamaño del título */
+        font-size: 20px;
     }
 
     nav ul li a {
-        font-size: 14px; /* Reducir aún más el tamaño de la fuente del enlace */
+        font-size: 14px;
     }
 }
