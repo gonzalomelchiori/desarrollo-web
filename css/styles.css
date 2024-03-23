@@ -158,3 +158,25 @@ main h3 {
         font-size: 14px;
     }
 }
+
+/* Para pantallas más pequeñas que 425px */
+@media only screen and (max-width: 425px) {
+    nav ul li {
+        margin-right: 10px; /* Reducir el margen entre elementos */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Reducir el tamaño de la fuente del enlace */
+    }
+}
+
+/* Para pantallas más pequeñas que 320px */
+@media only screen and (max-width: 320px) {
+    nav ul li {
+        margin-right: 5px; /* Reducir aún más el margen entre elementos */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reducir aún más el tamaño de la fuente del enlace */
+    }
+}
