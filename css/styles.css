@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #3F47CC;
 }
@@ -19,40 +19,10 @@ body {
     background-color: whitesmoke;
 }
 
-main{
-    background-color: rgba(217, 217, 217, 1);
-}
-
-nav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    max-width: 800px;
-    width: 100%;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    font-size: 25px;
-    text-decoration: none;
-    color: #3F47CC;
-    font-weight: bold;
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -66,6 +36,42 @@ header h1 {
     font-size: 60px;
 }
 
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre elementos de la barra de navegación */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #3F47CC;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
 main {
     display: flex;
     flex-direction: column;
@@ -124,4 +130,35 @@ main p {
 main h3 {
     font-size: 30px;
     margin-bottom: 5px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Reducir el tamaño de la fuente del enlace */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header h1 {
+        font-size: 30px; /* Reducir aún más el tamaño del título */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reducir aún más el tamaño de la fuente del enlace */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header h1 {
+        font-size: 20px; /* Reducir aún más el tamaño del título */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reducir aún más el tamaño de la fuente del enlace */
+    }
 }
